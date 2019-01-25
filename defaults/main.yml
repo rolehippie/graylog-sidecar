@@ -1,0 +1,21 @@
+graylog_sidecar_package: https://github.com/Graylog2/collector-sidecar/releases/download/1.0.0-beta.3/graylog-sidecar_1.0.0-1.beta.3_amd64.deb
+graylog_sidecar_server_url: http://127.0.0.1:9000
+graylog_sidecar_api_token:
+graylog_sidecar_node_id: file:/etc/machine-id
+graylog_sidecar_node_name: '{{ inventory_hostname }}'
+graylog_sidecar_update_interval: 10
+graylog_sidecar_tls_skip_verify: False
+graylog_sidecar_send_status: True
+graylog_sidecar_list_log_files: []
+graylog_sidecar_cache_path: /var/cache/graylog-sidecar
+graylog_sidecar_log_path: /var/log/graylog-sidecar
+graylog_sidecar_log_rotate_max_file_size: 10MiB
+graylog_sidecar_log_rotate_keep_files: 10
+graylog_sidecar_config_directory: /var/lib/graylog-sidecar/generated
+graylog_sidecar_whitelist:
+  - /usr/bin/filebeat
+  - /usr/bin/packetbeat
+  - /usr/bin/metricbeat
+  - /usr/bin/heartbeat
+  - /usr/bin/auditbeat
+  - /usr/bin/journalbeat

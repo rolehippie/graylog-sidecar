@@ -1,0 +1,24 @@
+server_url: "{{ graylog_sidecar_server_url }}/api/"
+server_api_token: "{{ graylog_sidecar_api_token }}"
+node_id: "{{ graylog_sidecar_node_id }}"
+node_name: "{{ graylog_sidecar_node_name }}"
+update_interval: {{ graylog_sidecar_update_interval }}
+tls_skip_verify: {{ graylog_sidecar_tls_skip_verify | lower }}
+send_status: {{ graylog_sidecar_send_status | lower }}
+list_log_files: {% if graylog_sidecar_list_log_files | length == 0 %}[]
+{% else %}
+
+{% for row in graylog_sidecar_list_log_files %}
+  - {{ row }}
+{% endfor %}{% endif %}
+cache_path: "{{ graylog_sidecar_cache_path }}"
+log_path: "{{ graylog_sidecar_log_path }}"
+log_rotate_max_file_size: "{{ graylog_sidecar_log_rotate_max_file_size }}"
+log_rotate_keep_files: {{ graylog_sidecar_log_rotate_keep_files }}
+collector_configuration_directory: "{{ graylog_sidecar_config_directory }}"
+collector_binaries_whitelist: {% if graylog_sidecar_whitelist | length == 0 %}[]
+{% else %}
+
+{% for row in graylog_sidecar_whitelist %}
+  - {{ row }}
+{% endfor %}{% endif %}

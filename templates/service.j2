@@ -1,0 +1,14 @@
+[Unit]
+Description=Graylog Sidecar
+
+[Service]
+Restart=always
+RestartSec=120s
+StartLimitInterval=5
+StartLimitBurst=10
+EnvironmentFile=/etc/environment
+
+ExecStart=/usr/bin/graylog-sidecar
+
+[Install]
+WantedBy=multi-user.target
