@@ -1,4 +1,4 @@
-graylog_sidecar_package: https://github.com/Graylog2/collector-sidecar/releases/download/1.0.0-beta.3/graylog-sidecar_1.0.0-1.beta.3_amd64.deb
+graylog_sidecar_package: https://github.com/Graylog2/collector-sidecar/releases/download/1.0.0/graylog-sidecar_1.0.0-1_amd64.deb
 graylog_sidecar_server_url: http://127.0.0.1:9000
 graylog_sidecar_api_token:
 graylog_sidecar_node_id: file:/etc/machine-id
@@ -19,3 +19,9 @@ graylog_sidecar_whitelist:
   - /usr/bin/heartbeat
   - /usr/bin/auditbeat
   - /usr/bin/journalbeat
+  - /usr/share/filebeat/bin/filebeat
+  - /usr/share/packetbeat/bin/packetbeat
+  - /usr/share/metricbeat/bin/metricbeat
+  - /usr/share/heartbeat/bin/heartbeat
+  - /usr/share/auditbeat/bin/auditbeat
+  - /usr/share/journalbeat/bin/journalbeat
