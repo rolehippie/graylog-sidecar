@@ -1,16 +1,24 @@
+# Standards: 0.1
+---
+# @meta author:value: [Thomas Boerger](https://github.com/tboerger)
+# @meta dependencies: >
+# None
+# @end
 galaxy_info:
   author: Thomas Boerger
   description: Ansible role to configure graylog-sidecar
   license: Apache-2.0
   min_ansible_version: 2.5
   platforms:
-  - name: Ubuntu
-    versions:
-    - xenial
-    - bionic
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
   galaxy_tags:
-  - graylog
-  - sidecar
-  - collector
+    - graylog
+    - sidecar
+    - collector
 
 dependencies: []
+
+...
