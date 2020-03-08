@@ -1,7 +1,7 @@
 # Standards: 0.1
 ---
 # @meta author:value: [Thomas Boerger](https://github.com/tboerger)
-# @meta dependencies: >
+# @meta dependencies:value: >
 # None
 # @end
 galaxy_info:
