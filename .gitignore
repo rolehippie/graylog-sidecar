@@ -1,0 +1,9 @@
+# ---> Ansible
+*.retry
+filter/plugins/
+library
+
+# ---> Python
+__pycache__/
+*.py[cod]
+*$py.class

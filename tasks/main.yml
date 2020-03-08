@@ -1,34 +1,38 @@
-- name: install package
+# Standards: 0.1
+---
+- name: Install required package
   apt:
-    deb: '{{ graylog_sidecar_package }}'
+    deb: "{{ graylog_sidecar_package }}"
     state: present
   tags:
     - graylog-sidecar
 
-- name: write config
+- name: Write config file
   notify:
-    - restart graylog-sidecar
+    - Restart graylog-sidecar
   template:
     src: config.j2
     dest: /etc/graylog/sidecar/sidecar.yml
   tags:
     - graylog-sidecar
 
-- name: prepare service
+- name: Write service file
   notify:
-    - restart graylog-sidecar
+    - Restart graylog-sidecar
   template:
     src: service.j2
     dest: /etc/systemd/system/graylog-sidecar.service
   tags:
     - graylog-sidecar
 
-- name: start service
+- name: Start graylog-sidecar service
   systemd:
     name: graylog-sidecar
     state: started
-    daemon_reload: yes
-    masked: no
-    enabled: yes
+    daemon_reload: True
+    masked: False
+    enabled: True
   tags:
     - graylog-sidecar
+
+...

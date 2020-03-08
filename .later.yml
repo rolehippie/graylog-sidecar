@@ -1,0 +1,6 @@
+---
+rules:
+  exclude_files:
+    - molecule/
+
+...

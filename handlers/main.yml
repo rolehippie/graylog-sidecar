@@ -1,5 +1,9 @@
-- name: restart graylog-sidecar
+# Standards: 0.1
+---
+- name: Restart graylog-sidecar
   systemd:
     name: graylog-sidecar
     state: restarted
-    daemon_reload: yes
+    daemon_reload: True
+
+...

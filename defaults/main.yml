@@ -1,17 +1,48 @@
+# Standards: 0.1
+---
+# @var graylog_sidecar_package:description: Download URL for sidecar package
 graylog_sidecar_package: https://github.com/Graylog2/collector-sidecar/releases/download/1.0.0/graylog-sidecar_1.0.0-1_amd64.deb
+
+# @var graylog_sidecar_server_url:description: URL to Graylog server
 graylog_sidecar_server_url: http://127.0.0.1:9000
+
+# @var graylog_sidecar_api_token:description: Token for Graylog authentication
 graylog_sidecar_api_token:
+
+# @var graylog_sidecar_node_id:description: Value of part for the node ID
 graylog_sidecar_node_id: file:/etc/machine-id
+
+# @var graylog_sidecar_node_name:description: Node name sent to Graylog
 graylog_sidecar_node_name: '{{ inventory_hostname }}'
+
+# @var graylog_sidecar_update_interval:description: Update interval
 graylog_sidecar_update_interval: 10
+
+# @var graylog_sidecar_tls_skip_verify:description: Skip TLS verify
 graylog_sidecar_tls_skip_verify: False
+
+# @var graylog_sidecar_send_status:description: Send status
 graylog_sidecar_send_status: True
+
+# @var graylog_sidecar_list_log_files:description: List log files
 graylog_sidecar_list_log_files: []
+
+# @var graylog_sidecar_cache_path:description: Cache path
 graylog_sidecar_cache_path: /var/cache/graylog-sidecar
+
+# @var graylog_sidecar_log_path:description: Log path
 graylog_sidecar_log_path: /var/log/graylog-sidecar
+
+# @var graylog_sidecar_log_rotate_max_file_size:description: Max file size for log rotation
 graylog_sidecar_log_rotate_max_file_size: 10MiB
+
+# @var graylog_sidecar_log_rotate_keep_files:description: Max files to keep for log rotation
 graylog_sidecar_log_rotate_keep_files: 10
+
+# @var graylog_sidecar_config_directory:description: Path to config directory
 graylog_sidecar_config_directory: /var/lib/graylog-sidecar/generated
+
+# @var graylog_sidecar_whitelist:description: List of allowed binaries
 graylog_sidecar_whitelist:
   - /usr/bin/filebeat
   - /usr/bin/packetbeat
@@ -25,3 +56,5 @@ graylog_sidecar_whitelist:
   - /usr/share/heartbeat/bin/heartbeat
   - /usr/share/auditbeat/bin/auditbeat
   - /usr/share/journalbeat/bin/journalbeat
+
+...
