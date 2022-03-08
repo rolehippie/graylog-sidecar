@@ -1,36 +1,37 @@
 # graylog-sidecar
 
-[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/graylog-sidecar) [![Testing Build](https://github.com/rolehippie/graylog-sidecar/workflows/testing/badge.svg)](https://github.com/rolehippie/graylog-sidecar/actions?query=workflow%3Atesting) [![Readme Build](https://github.com/rolehippie/graylog-sidecar/workflows/readme/badge.svg)](https://github.com/rolehippie/graylog-sidecar/actions?query=workflow%3Areadme) [![Galaxy Build](https://github.com/rolehippie/graylog-sidecar/workflows/galaxy/badge.svg)](https://github.com/rolehippie/graylog-sidecar/actions?query=workflow%3Agalaxy) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/graylog-sidecar)](https://github.com/rolehippie/graylog-sidecar/blob/master/LICENSE) 
+[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/graylog-sidecar) [![Testing Build](https://github.com/rolehippie/graylog-sidecar/workflows/testing/badge.svg)](https://github.com/rolehippie/graylog-sidecar/actions?query=workflow%3Atesting) [![Readme Build](https://github.com/rolehippie/graylog-sidecar/workflows/readme/badge.svg)](https://github.com/rolehippie/graylog-sidecar/actions?query=workflow%3Areadme) [![Galaxy Build](https://github.com/rolehippie/graylog-sidecar/workflows/galaxy/badge.svg)](https://github.com/rolehippie/graylog-sidecar/actions?query=workflow%3Agalaxy) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/graylog-sidecar)](https://github.com/rolehippie/graylog-sidecar/blob/master/LICENSE)
 
-Ansible role to install and configure the Graylog sidecar. 
+Ansible role to install and configure the Graylog sidecar.
 
-## Sponsor 
+## Sponsor
 
-[![Proact Deutschland GmbH](https://proact.eu/wp-content/uploads/2020/03/proact-logo.png)](https://proact.eu) 
+[![Proact Deutschland GmbH](https://proact.eu/wp-content/uploads/2020/03/proact-logo.png)](https://proact.eu)
 
 Building and improving this Ansible role have been sponsored by my employer **Proact Deutschland GmbH**.
 
 ## Table of content
 
-* [Default Variables](#default-variables)
-  * [graylog_sidecar_api_token](#graylog_sidecar_api_token)
-  * [graylog_sidecar_cache_path](#graylog_sidecar_cache_path)
-  * [graylog_sidecar_config_directory](#graylog_sidecar_config_directory)
-  * [graylog_sidecar_list_log_files](#graylog_sidecar_list_log_files)
-  * [graylog_sidecar_log_path](#graylog_sidecar_log_path)
-  * [graylog_sidecar_log_rotate_keep_files](#graylog_sidecar_log_rotate_keep_files)
-  * [graylog_sidecar_log_rotate_max_file_size](#graylog_sidecar_log_rotate_max_file_size)
-  * [graylog_sidecar_node_id](#graylog_sidecar_node_id)
-  * [graylog_sidecar_node_name](#graylog_sidecar_node_name)
-  * [graylog_sidecar_package](#graylog_sidecar_package)
-  * [graylog_sidecar_send_status](#graylog_sidecar_send_status)
-  * [graylog_sidecar_server_url](#graylog_sidecar_server_url)
-  * [graylog_sidecar_tls_skip_verify](#graylog_sidecar_tls_skip_verify)
-  * [graylog_sidecar_update_interval](#graylog_sidecar_update_interval)
-  * [graylog_sidecar_whitelist](#graylog_sidecar_whitelist)
-* [Dependencies](#dependencies)
-* [License](#license)
-* [Author](#author)
+- [Default Variables](#default-variables)
+  - [graylog_sidecar_api_token](#graylog_sidecar_api_token)
+  - [graylog_sidecar_cache_path](#graylog_sidecar_cache_path)
+  - [graylog_sidecar_config_directory](#graylog_sidecar_config_directory)
+  - [graylog_sidecar_list_log_files](#graylog_sidecar_list_log_files)
+  - [graylog_sidecar_log_path](#graylog_sidecar_log_path)
+  - [graylog_sidecar_log_rotate_keep_files](#graylog_sidecar_log_rotate_keep_files)
+  - [graylog_sidecar_log_rotate_max_file_size](#graylog_sidecar_log_rotate_max_file_size)
+  - [graylog_sidecar_node_id](#graylog_sidecar_node_id)
+  - [graylog_sidecar_node_name](#graylog_sidecar_node_name)
+  - [graylog_sidecar_package](#graylog_sidecar_package)
+  - [graylog_sidecar_send_status](#graylog_sidecar_send_status)
+  - [graylog_sidecar_server_url](#graylog_sidecar_server_url)
+  - [graylog_sidecar_tls_skip_verify](#graylog_sidecar_tls_skip_verify)
+  - [graylog_sidecar_update_interval](#graylog_sidecar_update_interval)
+  - [graylog_sidecar_whitelist](#graylog_sidecar_whitelist)
+- [Discovered Tags](#discovered-tags)
+- [Dependencies](#dependencies)
+- [License](#license)
+- [Author](#author)
 
 ---
 
@@ -198,9 +199,14 @@ graylog_sidecar_whitelist:
   - /usr/share/journalbeat/bin/journalbeat
 ```
 
+## Discovered Tags
+
+**_graylog-sidecar_**
+
+
 ## Dependencies
 
-* None
+- None
 
 ## License
 
