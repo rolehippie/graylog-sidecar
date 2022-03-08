@@ -13,6 +13,9 @@
   template:
     src: config.j2
     dest: /etc/graylog/sidecar/sidecar.yml
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
   tags:
     - graylog-sidecar
 
@@ -22,6 +25,9 @@
   template:
     src: service.j2
     dest: /etc/systemd/system/graylog-sidecar.service
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
   tags:
     - graylog-sidecar
 
