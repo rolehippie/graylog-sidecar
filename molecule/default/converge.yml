@@ -3,6 +3,6 @@
 - name: Converge
   hosts: all
   roles:
-    - role: graylog-sidecar
+    - role: rolehippie.graylog_sidecar
 
 ...
