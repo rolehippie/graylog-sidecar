@@ -1,6 +1,6 @@
 # graylog-sidecar
 
-[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&amp;logoColor=white)](https://github.com/rolehippie/graylog-sidecar)
+[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/graylog-sidecar)
 [![General Workflow](https://github.com/rolehippie/graylog-sidecar/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/graylog-sidecar/actions/workflows/general.yml)
 [![Readme Workflow](https://github.com/rolehippie/graylog-sidecar/actions/workflows/docs.yml/badge.svg)](https://github.com/rolehippie/graylog-sidecar/actions/workflows/docs.yml)
 [![Galaxy Workflow](https://github.com/rolehippie/graylog-sidecar/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/graylog-sidecar/actions/workflows/galaxy.yml)
@@ -42,7 +42,6 @@ Building and improving this Ansible role have been sponsored by my current and p
 ## Requirements
 
 - Minimum Ansible version: `2.10`
-
 
 ## Default Variables
 
@@ -143,7 +142,8 @@ Download URL for sidecar package
 #### Default value
 
 ```YAML
-graylog_sidecar_package: https://github.com/Graylog2/collector-sidecar/releases/download/1.0.0/graylog-sidecar_1.0.0-1_amd64.deb
+graylog_sidecar_package: 
+  https://github.com/Graylog2/collector-sidecar/releases/download/1.0.0/graylog-sidecar_1.0.0-1_amd64.deb
 ```
 
 ### graylog_sidecar_send_status
