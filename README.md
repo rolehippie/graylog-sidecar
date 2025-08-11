@@ -1,4 +1,4 @@
-# graylog-sidecar
+# workspace
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/graylog-sidecar)
 [![General Workflow](https://github.com/rolehippie/graylog-sidecar/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/graylog-sidecar/actions/workflows/general.yml)
@@ -211,7 +211,6 @@ graylog_sidecar_whitelist:
 ## Discovered Tags
 
 **_graylog-sidecar_**
-
 
 ## Dependencies
 
