@@ -3,6 +3,6 @@
   ansible.builtin.systemd:
     name: graylog-sidecar
     state: restarted
-    daemon_reload: True
+    daemon_reload: true
 
 ...

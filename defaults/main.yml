@@ -18,10 +18,10 @@ graylog_sidecar_node_name: '{{ inventory_hostname }}'
 graylog_sidecar_update_interval: 10
 
 # @var graylog_sidecar_tls_skip_verify:description: Skip TLS verify
-graylog_sidecar_tls_skip_verify: False
+graylog_sidecar_tls_skip_verify: false
 
 # @var graylog_sidecar_send_status:description: Send status
-graylog_sidecar_send_status: True
+graylog_sidecar_send_status: true
 
 # @var graylog_sidecar_list_log_files:description: List log files
 graylog_sidecar_list_log_files: []
