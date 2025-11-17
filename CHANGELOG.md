@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/rolehippie/graylog-sidecar/compare/v2.0.0...v2.1.0) (2025-11-17)
+
+
+### Features
+
+* apply new repo structure and update linting ([ee882a7](https://github.com/rolehippie/graylog-sidecar/commit/ee882a709e3fe361730f86cce3a8bb37d048b49a))
+
 ## [2.0.0](https://github.com/rolehippie/graylog-sidecar/compare/v1.0.0...v2.0.0) (2024-02-12)
 
 
