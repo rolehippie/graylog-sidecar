@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/rolehippie/graylog-sidecar/compare/v2.2.0...v2.3.0) (2026-08-10)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-doctor to v8.4.0 ([#49](https://github.com/rolehippie/graylog-sidecar/issues/49)) ([3dc9747](https://github.com/rolehippie/graylog-sidecar/commit/3dc97479b7373791f24465a30a9e2c2f8115bf1f))
+* **patch:** update dependency python to v3.14.7 ([#47](https://github.com/rolehippie/graylog-sidecar/issues/47)) ([3a4bd61](https://github.com/rolehippie/graylog-sidecar/commit/3a4bd61dca26b3d6750270be85303b2c529e0698))
+
 ## [2.2.0](https://github.com/rolehippie/graylog-sidecar/compare/v2.1.0...v2.2.0) (2026-07-27)
 
 ## [2.1.0](https://github.com/rolehippie/graylog-sidecar/compare/v2.0.0...v2.1.0) (2025-11-17)
