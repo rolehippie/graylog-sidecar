@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.4.0](https://github.com/rolehippie/graylog-sidecar/compare/v2.3.0...v2.4.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-lint to v26.8.0 ([#52](https://github.com/rolehippie/graylog-sidecar/issues/52)) ([8eb00ce](https://github.com/rolehippie/graylog-sidecar/commit/8eb00ced3399fe6293740df79762c4646e3fbc8a))
+* **minor:** update dependency pipx:molecule to v26.8.0 ([#53](https://github.com/rolehippie/graylog-sidecar/issues/53)) ([c10a99e](https://github.com/rolehippie/graylog-sidecar/commit/c10a99e135d325d1b6dfc89eee2f12b9f2196a41))
+* **patch:** update dependency pipx:ansible-core to v2.21.3 ([#50](https://github.com/rolehippie/graylog-sidecar/issues/50)) ([01e8b1d](https://github.com/rolehippie/graylog-sidecar/commit/01e8b1d965c0737a1c4b19ec6ac594f42bab9324))
+* **patch:** update dependency pre-commit to v4.6.2 ([#51](https://github.com/rolehippie/graylog-sidecar/issues/51)) ([e70d98c](https://github.com/rolehippie/graylog-sidecar/commit/e70d98c1d6f3f63e001e05e7a5c0c35151bd1640))
+
 ## [2.3.0](https://github.com/rolehippie/graylog-sidecar/compare/v2.2.0...v2.3.0) (2026-08-10)
 
 ### Dependencies
