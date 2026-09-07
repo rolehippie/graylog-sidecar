@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.0](https://github.com/rolehippie/graylog-sidecar/compare/v2.4.1...v2.5.0) (2026-09-07)
+
+### Features
+
+* add separate requirements for molecule run ([5fd3cf7](https://github.com/rolehippie/graylog-sidecar/commit/5fd3cf75119d29243e828af5d9495d08fea14a71))
+
 ## [2.4.1](https://github.com/rolehippie/graylog-sidecar/compare/v2.4.0...v2.4.1) (2026-08-31)
 
 ### Dependencies
